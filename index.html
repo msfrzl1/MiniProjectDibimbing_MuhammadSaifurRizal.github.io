@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Link Css -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- Link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Link Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  </head>
+  <body id="home">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+      <div class="container">
+        <div data-aos="fade-right" data-aos-duration="1000">
+          <div class="d-flex justify-content-center align-items-center">
+            <a href="#home"><img src="img/Logo-Steak-House.jpeg" alt="Logo" style="height: 70px; width: 70px; border-radius: 100%" /></a>
+            <a href="#home" class="navbar-brand ms-2 fw-bold text-white" id="brand"
+              ><h2>steaK<span>House</span></h2></a
+            >
+          </div>
+        </div>
+
+        <button
+          class="navbar-toggler border border-light text-bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto" data-aos="fade-left" data-aos-duration="1000">
+            <li class="nav-item me-3">
+              <a class="nav-link text-white" href="#home">Home</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link text-white" href="tentang-kami.html">Tentang Kami</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link text-white" href="#menu">Menu Best Seller</a>
+            </li>
+          </ul>
+          <div data-aos="fade-left" data-aos-duration="1000">
+            <a href="hubungi-kami.html" class="btn text-light" id="button">Hubungi Kami</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- carousel -->
+    <section id="carouselExampleCaptions" class="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://s3-alpha-sig.figma.com/img/1b44/8e9d/b35a9d22485676fca22b8a0e972cfbc3?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=N3ikzwXgShl~LwBy5ogxSI~KK1k-g6nNtAy4e5Eu6EFRyVTMR9a7QdxHa8C9GoxnNLrfjsHe~LGVuZsimh7ApIn0MouaD0zqdnMuArDEwVWU3tW8UyUplGjxTuT0o5ILL2GIqEOGGWy26Cbe3WQNSu4TS-nn28j9hbIpKnAMWMccgpDKWoscLZEaj30s3YFrML-mac7LphyxkL1lXNPW7T-pBKOLir2Vvd28TJjVlYS16HI-NZiAlmxleN0U53jQ0sI6pJhtO65xTyc3mHXcns7ZXSLMlDr3TS~ICNfw~QXjTBXO~30RnikYCvx17CfSmZYWfW0E9qLNtaoOyeBt4g__"
+            class="d-block w-100"
+            alt="Gambar 1"
+            style="height: 100vh"
+          />
+          <div class="carousel-caption d-md-block">
+            <div data-aos="flip-down" data-aos-duration="1000">
+              <h1 class="mb-3">Lorem ipsum dolor sit amet.</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, distinctio incidunt ipsam harum dignissimos optio ipsum libero
+                aliquam enim dolorem repellat eaque corporis. Ea, sapiente minima? Asperiores non quaerat tenetur.
+              </p>
+            </div>
+            <!-- Button trigger modal -->
+            <div data-aos="fade-up">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" id="button">Reservasi</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Reservasi</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Name" required />
+                        <label for="floatingInput">Nama Anda</label>
+                      </div>
+
+                      <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Pilih</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select>
+                        <label for="floatingSelect">Pilih Jumlah Orang</label>
+                      </div>
+
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required />
+                        <label for="floatingInput">Email</label>
+                      </div>
+
+                      <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Pilih</option>
+                          <option value="1">11:00</option>
+                          <option value="2">12:00</option>
+                          <option value="3">13:00</option>
+                          <option value="4">14:00</option>
+                          <option value="5">15:00</option>
+                          <option value="6">16:00</option>
+                          <option value="7">17:00</option>
+                          <option value="8">18:00</option>
+                          <option value="9">19:00</option>
+                          <option value="10">20:00</option>
+                        </select>
+                        <label for="floatingSelect">Pilih Waktu</label>
+                      </div>
+
+                      <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="floatingInput" required />
+                        <label for="floatingInput">Masukan Tanggal</label>
+                      </div>
+
+                      <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="floatingInput" placeholder="0897xxxxxx" required />
+                        <label for="floatingInput">No. Telpon</label>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="reset" class="btn btn-success clear-form-btn">Clear</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Keluar</button>
+                    <button type="button" class="btn btn-primary">Kirim</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Carousel End -->
+
+    <!-- About -->
+    <section class="py-5 container">
+      <div class="row py-5" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-md-7">
+          <div class="card h-100 border-0 bg-black">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                  <img src="img/profile.jpeg" class="d-block w-100" alt="..." style="height: 500px" />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <img src="img/profile1.jpeg" class="d-block w-100" alt="..." style="height: 500px" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/profile2.jpeg" class="d-block w-100" alt="..." style="height: 500px" />
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card h-100 bg-black d-flex justify-content-center mb-5">
+            <h1 class="text-white mb-4">STEAK <span>HOUSE</span></h1>
+            <p class="text-white">
+              Restoran Steak House telah berdiri sejak 1989 hingga saat ini. Kami bergerak dibidang mengelolah makanan yaitu daging ekspor maupun
+              impor, dimana alasan untuk mendirikan restoran ini adalah merupakan hasil survey bahwa masih kurangnya restoran daging terutama yang
+              menyediakan hidangan daging di kota Jakarta.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About End -->
+
+    <!-- section Pesanan-->
+    <section class="container-fluid py-5">
+      <div class="px-3" style="background: #e1e1e1">
+        <div class="row text-center">
+          <div class="col-sm-12 py-3">
+            <div data-aos="fade-down" data-aos-duration="1000">
+              <h1 class="fw-bold mb-3" style="font-size: 32px">PEMESANAN <span>ONLINE</span></h1>
+            </div>
+          </div>
+        </div>
+        <div class="row py-5" data-aos="fade-up" data-aos-duration="1000">
+          <div class="col-md-4">
+            <div class="card border-0" style="background: #eeeeee">
+              <div class="text-center">
+                <i class="bi bi-truck text-center" style="font-size: 100px; color: #f08e1e"></i>
+              </div>
+              <div class="card-body text-center fw-semibold">
+                <div class="text-center">
+                  <h3 class="card-title">Delivery Order</h3>
+                </div>
+                <div class="text-center">
+                  <p class="card-text">Layanan antar gratis setiap pembelian menu makanan kami. Area layanan hingga 15 KM</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0" style="background: #eeeeee">
+              <div class="text-center">
+                <i class="bi bi-card-list text-center" style="font-size: 100px; color: #f08e1e"></i>
+              </div>
+              <div class="card-body text-center fw-semibold">
+                <div class="text-center">
+                  <h3 class="card-title">Online Order</h3>
+                </div>
+                <div class="text-center">
+                  <p class="card-text">Menikmati hidangan kami langsung pesan dari rumah/kantor Anda</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0" style="background: #eeeeee">
+              <div class="text-center">
+                <i class="bi bi-shop text-center" style="font-size: 100px; color: #f08e1e"></i>
+              </div>
+              <div class="card-body text-center fw-semibold">
+                <div class="text-center">
+                  <h3 class="card-title">Prasmanan</h3>
+                </div>
+                <div class="text-center">
+                  <p class="card-text">Untuk setiap acara spesial Anda. Informasi dapat langsung hubungi kantor kami.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section Pesanan End -->
+
+    <!-- Menu -->
+    <main class="container py-5" id="menu">
+      <div class="row py-5">
+        <div class="text-center" class="row" data-aos="fade-down" data-aos-duration="1000">
+          <h2 class="text-white">Menu <span>Best</span> Seller</h2>
+        </div>
+      </div>
+      <div class="row" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/709a/e44b/c7831fb51e004e0de2aa276df4cea494?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=q5Pua45BgEvYeBYVz6QzT7yjvUHqFvQIEw7e14bUJKkjScTEvpJ~MPATlDFw-rJ2TLyTYmQRB8Y0gj6uIWNyIYyp22PClhCMuDztaORNObbfjrcQ2FJoGBSShIjShlsT~n9IBKcqDWdIIM337iQQ-yBAqS~GzrhGj372VR~~muWgXbaFiCNlCpvOjXBaAydo4YIudXdeh2-7bsE0PVmxKbTkPhrenwmapGTnCNfS-gp6Zv9ufg1j2-~0hmcAQtEZCMcakGTYjRyBWJlVLi4SmkuarJwy9-Y-~8nLgRqTD7WlHOl6C1GLdhVC-wsz2Lg0oEEmlxubE2EByZFr615jNQ__"
+              class="card-img-top"
+              alt="wagyu A5"
+              style="height: 250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Wagyu A5</h5>
+              <div class="mb-3">
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+              </div>
+              <p class="card-text">
+                Wagyu A5 adalah daging sapi yang istimewa. Daging ini memiliki kualitas yang tinggi, rasa yang lezat, dan harganya yang mahal. Wagyu
+                jenis ini adalah pilihan tepat untuk kamu yang ingin menikmati daging sapi yang berkualitas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/378a/d724/58598ae49676291bab9f308e51798ebd?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nLNEAdl3owehtoh~47wuLsqSaB15pX0z~LicEfecrVil8OUBkQjX1xLOdbHg5t0yuw533spITS2XVH3gARc0NUkP1iotTXDgwooLNs3X9MIMhx4bB96jCYHFp00OV017rnc~HYBS3lt3i6MiOAnlF2sf1Bvg~ezNBGlXaoqFxHbQksZFGLMAUyFs23SsQHVB9U87eM7cEssWJh1FsNSenOq0tC6X3ZyEnOC8KwRBLu1dryzX9IoT-51MjIVhgr9yBbjJYMorYqB995y76PCKedA8yBSItlaiuzIBir1LKzrckvV~uzM0DGEVgnH9ZkfhcDb3u1vNhL0uRP-53dQ~kQ__"
+              class="card-img-top"
+              alt="sirloin"
+              style="height: 250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Sirloin</h5>
+              <div class="mb-3">
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+              </div>
+              <p class="card-text">
+                Sirloin adalah potongan yang berasal dari punggung sapi. Meskipun secara tekstur cenderung lebih alot, tapi rasanya tak kalah nikmat
+                dengan kadar lemak yang lebih sedikit. Di berbagai restoran, sirloin termasuk potongan steak unggulan yang banyak peminatnya.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/6310/1473/95d0ee8c0e5b1373d017fa626973d314?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kkYwEr1crdzEAyiNg4mv2RyYA5cwUPdZbLHBRLx1YNbmBr-Io42HgdM9--cjYhN8Qq5TDXOYzi9cqGMezPmX9qPbQJJenzMp3ktnui1mC8AinhPoXT8AKO~XXRPqGomEOIgKRymVvvWceasbEvXQqF4sgiIxemALgpnV0NoYw-vHtpaMgATEBiEShAIYLyM7BoSe3RQc9yTdEIVj7RkPj4BEFLGtC5XsHO3A6krK3L-M7nBeivEftiS7C1sPk8MCMEXUQtk0SS5r~VQBiSKrs9Ua0ClAvM0ilw~~pmSf-NqwD9mEu49qqn9j7XxhTlm3lQmas10eIgB3iIbG4DAWKw__"
+              class="card-img-top"
+              alt="tenderloin"
+              style="height: 250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Tenderloin</h5>
+              <div class="mb-3">
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+              </div>
+              <p class="card-text">
+                Tenderloin merupakan potongan has dalam, yang berasal pada bagian tengah sapi wagyu. Tekstur bagian ini tergolong yang paling empuk,
+                lembut, dan mengandung lemak yang membuat rasanya nikmat.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" data-aos="fade-up" data-aos-duration="1000">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/ee65/4845/adadef5e01113e706b378b092ff73680?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l5gBV1ZdwOERAJo0HULfysu6aRhoJLPH4~Zd3~eLk2ErqwPSa4jQmEGokxLHI-cXwKIdoka3msopwy6C0BJ57cQXjtzmIcFuciV9YUD0yFtKfVI3O1eOlhYyECpEHz4GGmYEhkBRUrwquQJ8gUFF7-1owkwGow8jBesf3IfFn~hwciP~SaDnSLv8Fd7dkAQG3mWzyf-Gr~EzmQnXmX1JSpEsaDszrVCwp2P5TOv-vVIpTcrt23KtOnKEth0fgEUoh86qOVTTg9mmnD2Y4djBK0OfRrS-W0sNlZP5HYYqNwjoxMoYi0lvRHOr8IxzBWMVwETUtgHxYZq7U27Tk60kUQ__"
+              class="card-img-top"
+              alt="ribeye"
+              style="height: 250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Ribe Eye</h5>
+              <div class="mb-3">
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+              </div>
+              <p class="card-text">
+                Berasal dari sekitar tulang rusuk dan area punggung, rib eye juga menjadi potongan unggulan.kamu mungkin lebih akrab dengan istilah
+                iga. Bagian ini punya keunggulan dari tingkat kegurihannya yang bikin ketagihan.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/b81e/a521/8c637c6cadfe889f1b9b047df3934229?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CB6Do6~rtjchSXv7k6DHfdeKZNAPW00DbkH5YWG-N0pp7CggYNs0pzQMwlRSUoFlpkt82AP-mrWuODLFBnSohqX6cGRZYqVGml6UkmSwBPu8CpENPTjSKPj-stjehLogWo161aPbN2~MTZAkH0piqnns3z5myX3sQm4kBVzt42Hu9~t2~p-e7hEy0jQLvj3z7GgSdWDbEc2CFq9cjz3iPRie1Tf1RSR~triSLCka5eC0g4n2e0tkemv8VlzlaCdsQzFxu9cTNlFkTWfYiM1vgFMfQ9rwALb40xAhz-cq3gMiopkiLkoGv~1E55I8ecFZNHUl72qQxIfewsnABU6WIw__"
+              class="card-img-top"
+              alt="..."
+              style="height: 250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Dry Aged Wagyu A5</h5>
+              <div class="mb-3">
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+              </div>
+              <p class="card-text">
+                dry aged bagian dalam daging akan mengalami pembusukan dan ototnya menjadi hancur. Hal inilah yang membuat daging dry aged mempunyai
+                tekstur yang lebih lembut dan empuk. Tenang saja walaupun bagian dalamnya lembut tapi bagian luar daging tetap kering.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="https://s3-alpha-sig.figma.com/img/98b5/2375/8590eebed39b624ccd223bcf97a49616?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Gp25mOaJVuKVwvWMI27FVIBGQ9EaS3727McCEv4jdatU30ZEQck~r~yLrl4e01dojUGkPcm7Y7zqHUlEAa3mEbBYnluuX~tTfYy4evi~h4o4LkAdwmkRZjzoxR8BK6QdfmryczAKgF3U~3vJ~DWucKy~Hsjl1INObnK6M5ve6AzDgwrAIp8aoImnDH1cYfCq5EjGM9SOaN3FcQntGU7sTR9Z0cN01FXXSNtJR9OSpOarfyagZxzTPrgs6cw93hGK4i8Wc-PZcHLpmhObTkjYGtWsMVbBUX4Voc0-bqX0SA~kK~rlTCMVjiCynPglEEEG0Mg8gk~ONvlclebLxkO5Xw__"
+              class="card-img-top"
+              alt="..."
+              style="height: 250px"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Salad</h5>
+              <div class="mb-3">
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+                <i class="bi bi-star-fill text-warning fs-3"></i>
+              </div>
+              <p class="card-text">
+                Salad makanan yang dihidangkan bersama dressing (sauce) dan umumnya salad dihidangkan dengan sayuran yang crispy
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-end mb-5" class="row" data-aos="flip-down" data-aos-duration="1000">
+        <a a href="menu.html" style="width: 150px; background-color: #f08e1e" class="btn text-white">Menu</a>
+      </div>
+    </main>
+    <!-- Menu End -->
+
+    <!-- Rating -->
+    <section class="container-fluid mb-5">
+      <div class="row text-center">
+        <div class="col-sm-12 mb-5">
+          <div data-aos="fade-down" data-aos-duration="1000">
+            <h2 class="fw-bold text-white mb-3">PENILAIAN <span>PELANGGAN</span></h2>
+          </div>
+        </div>
+      </div>
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <div class="row" data-aos="fade-up" data-aos-duration="1000">
+              <div class="col">
+                <div class="card d-flex align-items-center h-100 py-5">
+                  <div class="mb-1">
+                    <img src="img/Logo-Steak-House.jpeg" alt="orang 1" style="width: 100px; height: 100px; border-radius: 100%" />
+                  </div>
+                  <div class="card-body text-center p-0" style="width: 80%">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <h5 class="mb-2">Muhammad Saifur Rizal</h5>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, eligendi. Facere aut explicabo numquam? Aperiam dicta,
+                      dolores aspernatur recusandae repellendus facilis. Similique aliquam fuga odio!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <div class="row" data-aos="fade-up" data-aos-duration="1000">
+              <div class="col">
+                <div class="card d-flex align-items-center h-100 py-5">
+                  <div class="mb-1">
+                    <img src="img/Logo-Steak-House.jpeg" alt="orang 1" style="width: 100px; height: 100px; border-radius: 100%" />
+                  </div>
+                  <div class="card-body text-center p-0" style="width: 80%">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <h5 class="mb-2">Muhammad Subhan Radhani</h5>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, eligendi. Facere aut explicabo numquam? Aperiam dicta,
+                      dolores aspernatur recusandae repellendus facilis. Similique aliquam fuga odio!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <div class="row" data-aos="fade-up" data-aos-duration="1000">
+              <div class="col">
+                <div class="card d-flex align-items-center h-100 py-5">
+                  <div class="mb-1">
+                    <img src="img/Logo-Steak-House.jpeg" alt="orang 1" style="width: 100px; height: 100px; border-radius: 100%" />
+                  </div>
+                  <div class="card-body text-center p-0" style="width: 80%">
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <i class="bi bi-star-fill text-warning"></i>
+                    <h5 class="mb-2">Nur Alya</h5>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate, eligendi. Facere aut explicabo numquam? Aperiam dicta,
+                      dolores aspernatur recusandae repellendus facilis. Similique aliquam fuga odio!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Rating End -->
+
+    <!-- Footer -->
+    <footer class="bg-dark pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 text-light">
+            <h4 class="mb-3">Restoran Steak House</h4>
+            <p>
+              Restoran Steak House telah berdiri sejak 1989 hingga saat ini. Kami bergerak dibidang mengelolah makanan yaitu daging ekspor maupun
+              impor
+            </p>
+            <div class="fs-2">
+              <a href=""><i class="bi bi-instagram" style="color: #f08e1e"></i></a>
+              <a href=""><i class="bi bi-facebook" style="color: #f08e1e"></i></a>
+              <a href=""><i class="bi bi-twitter" style="color: #f08e1e"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-3 text-light">
+            <h4 class="mb-3">Open Hourse</h4>
+            <div class="container">
+              <div class="col-md-12">
+                <ul class="p-0">
+                  <li>Monday: 9:00 AM - 5:00 PM</li>
+                  <li>Tuesday: 9:00 AM - 5:00 PM</li>
+                  <li>Wednesday: 9:00 AM - 5:00 PM</li>
+                  <li>Thursday: 9:00 AM - 5:00 PM</li>
+                  <li>Friday: 9:00 AM - 5:00 PM</li>
+                  <li>Saturday: Closed</li>
+                  <li>Sunday: Closed</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-light">
+            <h4 class="mb-3">Newsletter</h4>
+            <p>Dapatkan informasi dan promo terbaru dari kami.</p>
+            <div class="col-md-12 mt-2">
+              <div class="mb-5">
+                <input
+                  type="email"
+                  class="form-control text-center"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email addres"
+                />
+
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn mt-3 w-100 text-white"
+                  style="background-color: #f08e1e"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalFooter"
+                >
+                  Subscribe
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalFooter" tabindex="-1" aria-labelledby="exampleModalFooterLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <div
+                          class="alert alert-success modal-title text-black w-100 d-flex align-items-center gap-2"
+                          style="padding: 0 10px"
+                          id="exampleModalFooterLabel"
+                          role="alert"
+                        >
+                          <i class="bi bi-check-circle-fill fs-2"></i> Thanks For Subscribe
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Script Js -->
+    <script src="js/script.js"></script>
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Scrip AOS -->
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

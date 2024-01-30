@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <!-- Link Css -->
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- Link AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Link Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  </head>
+  <body id="tentang-kami">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+      <div class="container">
+        <div data-aos="fade-right" data-aos-duration="1000">
+          <div class="d-flex justify-content-center align-items-center">
+            <a href="index.html"><img src="img/Logo-Steak-House.jpeg" alt="Logo" style="height: 70px; width: 70px; border-radius: 100%" /></a>
+            <a href="index.html" class="navbar-brand ms-2 fw-bold text-white" id="brand"
+              ><h2>steaK<span>House</span></h2></a
+            >
+          </div>
+        </div>
+
+        <button
+          class="navbar-toggler border border-light text-bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto" data-aos="fade-left" data-aos-duration="1000">
+            <li class="nav-item me-3">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link text-white" href="#tentang-kami">Tentang Kami</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link text-white" href="menu.html">Menu</a>
+            </li>
+          </ul>
+          <div data-aos="fade-left" data-aos-duration="1000">
+            <a href="hubungi-kami.html" class="btn text-light" id="button">Hubungi Kami</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- carousel -->
+    <section id="carouselExampleCaptions" class="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/tentang-kami.jpeg" class="d-block w-100" alt="Gambar 1" style="height: 100vh" />
+          <div class="carousel-caption d-md-block">
+            <div data-aos="fade-up">
+              <h1 class="mb-3" style="font-weight: 900; font-size: 42px">Tentang kami</h1>
+            </div>
+            <!-- Button trigger modal -->
+            <div data-aos="fade-up">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" id="button">Reservasi</button>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5 text-dark" id="exampleModalLabel">Reservasi</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Name" required />
+                        <label for="floatingInput">Nama Anda</label>
+                      </div>
+
+                      <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Pilih</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                        </select>
+                        <label for="floatingSelect">Pilih Jumlah Orang</label>
+                      </div>
+
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required />
+                        <label for="floatingInput">Email</label>
+                      </div>
+
+                      <div class="form-floating mb-3">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                          <option selected>Pilih</option>
+                          <option value="1">11:00</option>
+                          <option value="2">12:00</option>
+                          <option value="3">13:00</option>
+                          <option value="4">14:00</option>
+                          <option value="5">15:00</option>
+                          <option value="6">16:00</option>
+                          <option value="7">17:00</option>
+                          <option value="8">18:00</option>
+                          <option value="9">19:00</option>
+                          <option value="10">20:00</option>
+                        </select>
+                        <label for="floatingSelect">Pilih Waktu</label>
+                      </div>
+
+                      <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="floatingInput" required />
+                        <label for="floatingInput">Masukan Tanggal</label>
+                      </div>
+
+                      <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="floatingInput" placeholder="0897xxxxxx" required />
+                        <label for="floatingInput">No. Telpon</label>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="reset" class="btn btn-success clear-form-btn">Clear</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Keluar</button>
+                    <button type="button" class="btn btn-primary">Kirim</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Carousel End -->
+
+    <!-- tentang kami -->
+    <div class="container mb-5">
+      <div style="--bs-breadcrumb-divider: ''" aria-label="breadcrumb" class="mt-3">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html" style="color: #f08e1e">Home ></a></li>
+          <li class="breadcrumb-item active text-white" aria-current="page">Hubungi-kami</li>
+        </ol>
+      </div>
+      <div data-aos="fade-down" data-aos-duration="1000">
+        <div class="text-center py-3">
+          <h1 class="text-white"><span>Tentang </span>Kami</h1>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="1000">
+        <p class="text-white">
+          Restoran Steak House merupakan perusahaan swasta yang terbentuk perorangan. Didirikan pada tanggal 9 oktober 1989 berlokasi di jalan Kemang
+          Raya No. 11 Jakarta Selatan, yang kemudian ditetapkan sebagai Rumah Steak sekaligus sebagai kantor pusat dan administrasinya. Pada awalnya
+          restoran ini hanya berupa rumah makan yang diberi nama "Rumah Steak Eat House". Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          Voluptate eos debitis deleniti deserunt distinctio eaque delectus, officiis architecto reiciendis quod animi accusantium quae sit voluptas
+          ut itaque est dicta numquam dolore exercitationem vitae quam facere cumque natus. Temporibus facere ab cupiditate itaque totam, accusamus
+          reprehenderit consequatur, quos, esse quisquam error commodi debitis magnam fugiat distinctio quibusdam similique tempora excepturi aperiam
+          quis velit doloremque. Officia numquam perspiciatis sequi dolores obcaecati, neque quia mollitia laudantium vero doloremque non saepe rem
+          ipsam impedit, dolore fuga doloribus ad officiis facilis quibusdam praesentium pariatur sed assumenda. Itaque ex modi eligendi vel! Eligendi
+          cum quod a.
+        </p>
+        <p class="text-white">
+          Rumah Makan Steak House bergerak dibidang mengelolah makanan yang spesifik yaitu Daging ekspor maupun impor, dimana alasan untuk mendirikan
+          rumah makan ini adalah merupakan hasil survey bahwa masih kurangnya sarana rumah makan terutama yang menyediakan makanan spesifik Daging dan
+          Melayu dikota Jakarta Selatan. Dengan melihat kesempatan inilah, maka didirikanlah Rumah Makan Eat House pada tahun 1989. Bidang usaha ini
+          terus berkembang hingga saat ini, dimana terdapat beberapa usaha sejenis yang dikelola oleh pihak lain. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Nesciunt, cupiditate exercitationem? Ducimus earum distinctio voluptatem dignissimos cumque reprehenderit
+          praesentium beatae placeat, expedita officiis, commodi accusantium rerum? Quis ipsum eligendi quisquam officiis sequi accusamus distinctio
+          eum! Necessitatibus, fugiat laudantium! Dolorem commodi sunt deleniti tempora suscipit maxime. Sint alias corrupti quidem aut. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Recusandae neque quos, placeat architecto aliquam fugiat qui ab error nesciunt alias animi
+          voluptate, temporibus id ratione accusantium illum dolor officia quod a vitae nemo ullam iusto? Dignissimos delectus tempore blanditiis
+          dolore repudiandae tenetur accusamus facilis deleniti impedit voluptatum maiores aperiam doloribus eos voluptates consequatur consectetur id
+          ipsum ex explicabo, mollitia fugit saepe? Accusantium aliquid ipsa, animi alias, nulla accusamus suscipit quis id quia voluptate
+          necessitatibus non quidem fugit quam nobis sunt quo qui! Eaque minima eos, nostrum neque libero fuga dolore, asperiores accusamus at sed,
+          numquam quibusdam id porro. Cumque, quaerat?
+        </p>
+      </div>
+    </div>
+    <div class="container-fluid pb-5 bg-body-tertiary">
+      <div data-aos="fade-down" data-aos-duration="1000">
+        <div class="row">
+          <div class="col-sm-12 py-4 text-center">
+            <h1><span>Restoran </span>Steak House</h1>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-down" data-aos-duration="1000">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/fef2/7df3/51ee4fcc8d144ba9c852b7f9a53c8c63?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NB4E4bw4ThvPNChhJ2IRuViNV8-RBWfplO8UQDuiyTl-2~GUm6l1dFGgRrhXZiB51Vyv-O2GrDve3WYmbiJ13AF63dGJbaTGBvJQ1bfjLqnHTlAVjuocaXcA-sxriLYNYo3es-~wVpZvs7OXAJaxyGzkt0Qflg~GuBcPPnLWpJ9RGSsg9wJaKpny0gwixIbFtcp6FBhFVsWRnzwzs5B7ieYwaNjdFOI4I0W0Ax7T7V-U7wUyRuGv-4D-0KZquDBVxkUq0gL33cILU8jyxcw6N8P4KXhs2h1tLJUXYNxc6~XNnBLSQJoMaaDiI8ZWVBCQbzutWJ7LkIxsC5HAJy6tpQ__"
+                class="card-img-top"
+                alt="Jakarta"
+                style="height: 300px"
+              />
+              <h3 class="card-title mt-3">Jakarta</h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/757c/362e/b2a57b325338a9e767d3913ecc6f87a9?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=b~6qs221XYNtifFFvyonzzpiYhklkYXwFCMV6vouJfV4~VZwTXQ3kp37m~c~DqrB~d-KjlelOonEHnc9P7~W38-iCvCOkor~Gm~XPeMWirgbqDntvmKMrOGyv8UeFIHO~YbiKjyPsNDEosItTRCM7wh3kmPu4yWjbW33D~2dPcHyibVx7dsIkJZ-8dN-juVFlqts8LY5C6qXS-0UT1-E2Z8llUwJCaRpUHPgQZy8F0E6vmV1HUQgDljJsTwrAtahbHAvIwy2dAw4s5ydiMMCyuH1dhxPLlvjSnibuKRSbvZLYg2DMw98VB1CPTIflRhpB7gRcoapqXzrhMT~aec6hQ__"
+                class="card-img-top"
+                alt="Bandung"
+                style="height: 300px"
+              />
+              <h3 class="card-title mt-3">Bandung</h3>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card border-0">
+              <img
+                src="https://s3-alpha-sig.figma.com/img/c5c1/b062/8d7b4bd59e751f00b880f4645fb5f4f1?Expires=1707091200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OFZ-VN45ntz2iziHVil5oCcKIJ8NvQBlgSoUoivHG~HZlx7QPQuZJqA8HjTvdJpRS-O8bFMTsMAcfUnhO0cVi8EC-6HGaZxq7yZe0eV1jMF~lBm-WdCzne9SKxuQZkLRCcgUX4zq9iUS7X5kC9oy5UvmIoefmmWPDFhQT63DX0T6D84chNd0Wwb1RZzxUSt0GvbHA39Lr~D7nbBx30NbKAtSffx1QIVOpwJTrnCQ7gKYAmMU0TCrq9PDnDzrUmrvq1IAe0u-ht5E3PMHZUOMVKU2fA6xYcXgJGJEcdo1AGEHQI47IZR4Aa7BqLPF3xYXpVnI-E1ix-l90PGckyfYRw__"
+                class="card-img-top"
+                alt="Jogja"
+                style="height: 300px"
+              />
+              <h3 class="card-title mt-3">Jogja</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- tentang kami End -->
+
+    <!-- Footer -->
+    <footer class="bg-dark pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 text-light">
+            <h4 class="mb-3">Restoran Steak House</h4>
+            <p>
+              Restoran Steak House telah berdiri sejak 1989 hingga saat ini. Kami bergerak dibidang mengelolah makanan yaitu daging ekspor maupun
+              impor
+            </p>
+            <div class="fs-2">
+              <a href=""><i class="bi bi-instagram" style="color: #f08e1e"></i></a>
+              <a href=""><i class="bi bi-facebook" style="color: #f08e1e"></i></a>
+              <a href=""><i class="bi bi-twitter" style="color: #f08e1e"></i></a>
+            </div>
+          </div>
+
+          <div class="col-md-3 text-light">
+            <h4 class="mb-3">Open Hourse</h4>
+            <div class="container">
+              <div class="col-md-12">
+                <ul class="p-0">
+                  <li>Monday: 9:00 AM - 5:00 PM</li>
+                  <li>Tuesday: 9:00 AM - 5:00 PM</li>
+                  <li>Wednesday: 9:00 AM - 5:00 PM</li>
+                  <li>Thursday: 9:00 AM - 5:00 PM</li>
+                  <li>Friday: 9:00 AM - 5:00 PM</li>
+                  <li>Saturday: Closed</li>
+                  <li>Sunday: Closed</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 text-light">
+            <h4 class="mb-3">Newsletter</h4>
+            <p>Dapatkan informasi dan promo terbaru dari kami.</p>
+            <div class="col-md-12 mt-2">
+              <div class="mb-5">
+                <input
+                  type="email"
+                  class="form-control text-center"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Enter email addres"
+                />
+
+                <!-- Button trigger modal -->
+                <button
+                  type="button"
+                  class="btn mt-3 w-100 text-white"
+                  style="background-color: #f08e1e"
+                  data-bs-toggle="modal"
+                  data-bs-target="#exampleModalFooter"
+                >
+                  Subscribe
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalFooter" tabindex="-1" aria-labelledby="exampleModalFooterLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <div
+                          class="alert alert-success modal-title text-black w-100 d-flex align-items-center gap-2"
+                          style="padding: 0 10px"
+                          id="exampleModalFooterLabel"
+                          role="alert"
+                        >
+                          <i class="bi bi-check-circle-fill fs-2"></i> Thanks For Subscribe
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Script Js -->
+    <script src="js/script.js"></script>
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Scrip AOS -->
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
