@@ -1,3 +1,4 @@
+//!---------------------------------
 const navbar = document.getElementById("navbar");
 
 window.addEventListener("scroll", () => {
@@ -9,6 +10,30 @@ window.addEventListener("scroll", () => {
   }
 });
 
+//!---------------------------------
+const textContainer = document.getElementById("textContainer");
+const text = "steaKHouse";
+
+function animateText() {
+  let index = 0;
+
+  function animateCharacter() {
+    textContainer.innerText = text.substring(0, index);
+    index++;
+
+    if (index > text.length) {
+      index = 0;
+    }
+
+    setTimeout(animateCharacter, 300);
+  }
+
+  animateCharacter();
+}
+
+animateText();
+
+//!---------------------------------
 const clear = document.querySelector(".clear-form-btn");
 
 clear.addEventListener("click", function () {

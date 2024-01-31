@@ -26,9 +26,7 @@
         <div data-aos="fade-right" data-aos-duration="1000">
           <div class="d-flex justify-content-center align-items-center">
             <a href="index.html"><img src="img/Logo-Steak-House.jpeg" alt="Logo" style="height: 70px; width: 70px; border-radius: 100%" /></a>
-            <a href="index.html" class="navbar-brand ms-2 fw-bold text-white" id="brand"
-              ><h2>steaK<span>House</span></h2></a
-            >
+            <a href="index.html" class="navbar-brand ms-2 fw-bold text-white" id="brand"><h2 id="textContainer"></h2></a>
           </div>
         </div>
 
@@ -46,17 +44,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto" data-aos="fade-left" data-aos-duration="1000">
             <li class="nav-item me-3">
-              <a class="nav-link text-white" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item me-3">
-              <a class="nav-link text-white" href="tentang-kami.html">Tentang Kami</a>
+              <a class="nav-link" href="tentang-kami.html">Tentang Kami</a>
             </li>
             <li class="nav-item me-3">
-              <a class="nav-link text-white" href="menu.html">Menu</a>
+              <a class="nav-link" href="menu.html">Menu</a>
             </li>
           </ul>
-          <div data-aos="fade-left" data-aos-duration="1000">
-            <a href="hubungi-kami.html" class="btn text-light" id="button">Hubungi Kami</a>
+          <div class="py-2">
+            <div data-aos="fade-left" data-aos-duration="1000">
+              <a href="hubungi-kami.html" class="btn" id="button">Hubungi Kami</a>
+            </div>
           </div>
         </div>
       </div>
@@ -186,7 +186,7 @@
             <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
             <label for="floatingTextarea2">Pesan Anda</label>
           </div>
-          <button type="submit" class="btn text-white" style="background-color: #f08e1e; width: 100px">Kirim</button>
+          <button type="submit" class="btn" id="button" style="width: 150px">Kirim</button>
         </form>
       </div>
     </section>
@@ -242,7 +242,8 @@
                 <!-- Button trigger modal -->
                 <button
                   type="button"
-                  class="btn mt-3 w-100 text-white"
+                  class="btn mt-3 w-100"
+                  id="button"
                   style="background-color: #f08e1e"
                   data-bs-toggle="modal"
                   data-bs-target="#exampleModalFooter"
